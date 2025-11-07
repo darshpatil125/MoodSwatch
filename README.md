@@ -45,11 +45,6 @@ MoodSwatch uses a custom model to generate:
 
 ---
 
-## 📁 Example Project Structure
-
-
----
-
 ## 🔒 Privacy
 MoodSwatch is a **personal journaling tool**, not a mental-health service.  
 All data stays local unless the user chooses to sync or export.
