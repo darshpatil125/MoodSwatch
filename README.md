@@ -1,6 +1,8 @@
 # MoodSwatch  
 *A minimal, aesthetic AI mood journal powered by Google AI Studio.*
+
 https://ai.studio/apps/drive/15TNhAkTs0xgI8m3ERdt3K65Q-tKKGJPg
+
 MoodSwatch helps students log emotions using simple color swatches and short notes.  
 The app generates calm AI reflections, reframes, micro-actions, and weekly vibe summaries.  
 Everything is fast, private, and designed with a clean liquid-glass aesthetic.
