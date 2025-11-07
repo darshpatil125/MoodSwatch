@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Mood Journal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            colors: {
+              'dawn-bg-start': '#FDFCFB',
+              'dawn-bg-end': '#E2D1C3',
+              'dusk-bg-start': '#0D0B14',
+              'dusk-bg-end': '#25213C',
+              'dawn-text': '#4B3832',
+              'dusk-text': '#E0D2C5',
+              'dawn-accent': '#E57373',
+              'dusk-accent': '#F06292',
+              'dawn-card': 'rgba(255, 255, 255, 0.2)',
+              'dusk-card': 'rgba(37, 33, 60, 0.3)',
+              'dawn-shadow': 'rgba(75, 56, 50, 0.1)',
+              'dusk-shadow': 'rgba(0, 0, 0, 0.25)',
+            },
+            boxShadow: {
+              'soft': '0 4px 12px 0 rgba(0, 0, 0, 0.05)',
+              'soft-dark': '0 4px 12px 0 rgba(0, 0, 0, 0.15)',
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+      body {
+        -webkit-tap-highlight-color: transparent;
+        background-color: #FDFCFB;
+      }
+      .dark body {
+        background-color: #0D0B14;
+      }
+
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+
+      .custom-slider {
+        -webkit-appearance: none;
+        width: 100%;
+        height: 4px;
+        border-radius: 5px;
+        background: rgba(0, 0, 0, 0.05);
+        outline: none;
+        padding: 0;
+        margin: 0;
+      }
+      .dark .custom-slider {
+        background: rgba(255, 255, 255, 0.1);
+      }
+      .custom-slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        background: white;
+        cursor: pointer;
+        border: 4px solid currentColor;
+        transition: background .2s ease-in-out;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      }
+      .custom-slider::-moz-range-thumb {
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        background: white;
+        cursor: pointer;
+        border: 4px solid currentColor;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.29.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "recharts": "https://aistudiocdn.com/recharts@^3.3.0",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.24"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+    <script src="https://unpkg.com/framer-motion@10/dist/framer-motion.umd.js"></script>
+  </body>
+</html>
